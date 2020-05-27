@@ -32,4 +32,14 @@ body {
   .site-subtitle{
     font-style: italic;
   }
-  
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  } 
+    @media (min-width: 600px) {
+      body {
+        font-size: 18px;
+      }
+    }
+  }
