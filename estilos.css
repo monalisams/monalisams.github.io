@@ -1,45 +1,130 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---- */
+
 body {
     background-size: auto 100vh;
     font-family: Arial;
     height: 100vh;
-  }
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 2rem;
+
+}
   
+  
+
+  
+
   .menu {
     background-color: none;
   }
-  a{Color: black;
-    
-  }
-  a{
-   text-decoration: none;
-  }
-  a:hover {
-   text-decoration: underline; 
+
+  .menu ul{
+    display: flex;
+    flex-direction: column;
   }
   
   .menu li {
    list-style: none;
+   margin: 0.2rem;
   }
-  .menu ul{
-    display: flex;
-    justify-content: space-around; 
+
+  .menu a{
+   text-decoration: none;
+   color: black;
+   background-color: red;
+   display: block;
+   padding: 0.3rem;
+   text-align: center;
+   font-size: 18px
   }
+  
+  .menu a:hover {
+   text-decoration: underline; 
+   background-color: royalblue;
+  }
+  
+  
   .site-title,
   .site-subtitle{
     color: black;
     text-align:center;
-  }
-  .site-subtitle{
     font-style: italic;
+    font-size: 20px;
   }
+
   @media (min-width: 400px) {
     body {
       font-size: 14px;
     }
   } 
-    @media (min-width: 600px) {
-      body {
-        font-size: 18px;
-      }
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
     }
   }
+
+  .esquerda{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-row-gap: 0.70rem;
+    
+  }
+
+  .esquerda .site-title{
+    align-self: end;
+  }
+  .direita {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;   
+  }
+  .direita h3{
+    margin: 2rem;
+    font-size: 28px;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    justify-self: center;
+  }
+
+  .direita .texto{
+ margin: 0 125px;
+
+  }
+
+  .direita .texto p{  
+    vertical-align: center;
+    font-size: larger;
+    text-align: justify;
+    margin-bottom: 2rem;
+    
+  }
+  .direita .referencias {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+font-size: larger;
+margin-top: 4rem;
+
+  }
+  .direita .referencias a{
+  text-decoration: none;
+  color: black;
+  
+  }
+
+  .direita .referencias li{
+    margin-top: 0.75rem; 
+  }
+  .direita h4{
+    margin-bottom: 1rem;
+  }
+  
